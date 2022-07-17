@@ -20,14 +20,35 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+.green {
+  background-color: rgb(223, 74, 74);
+  list-style: none;
+  text-align: left;
+  padding:20px;
+  border: 2px solid black;
+  
+}
+.yellow {
+  background-color: rgb(113, 199, 113);
+  list-style: none;
+  text-align: left;
+  padding:20px;
+  border: 2px solid black;
+  
+}
 .description {
   white-space: pre-wrap;
 }
+.btn  {
+  background-color: #06aed5;
+}
 
 .time-block {
-  text-align: center;
-  border-radius: 15px;
+  
+  text-align: left;
+  background-color: rgb(245, 234, 234);
+  padding:20px;
+  border: 2px solid black;
 }
 
 .row {
