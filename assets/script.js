@@ -1,6 +1,6 @@
 //display current date on top of the page
 let timeEl = $("#currentDay");
-let date = moment().format("MMMM Do YYYY, h:mm:ss a");
+let date = moment().format("dddd MMMM Do YYYY");
 timeEl.append(date);
 
 //display timeblocks for working hours of the day
@@ -47,8 +47,7 @@ $("#butt").on("click", function (event) {
 });
 function getText8am() {
   let storedText = localStorage.getItem('todo');
-  document.getElementById('8am').value = (storedText);
-    //  $("#8am").val() = (storedText);
+     $("#8am").val(storedText);
 }
 
 //9am code 
@@ -58,8 +57,7 @@ $("#butt1").on("click", function (event) {
   });
   function getText9am() {
     let storedText = localStorage.getItem('todo1');
-    document.getElementById('9am').value = (storedText);
-    //    $("#9am").val() = (storedText);
+       $("#9am").val(storedText);
   }
  
   //10am code 
@@ -70,8 +68,7 @@ $("#butt1").on("click", function (event) {
   });
   function getText10am() {
     let storedText = localStorage.getItem('todo2');
-    document.getElementById('10am').value = (storedText);
-    //    $("#10am").val() = (storedText);
+       $("#10am").val(storedText);
   }
 
   //11am code 
@@ -81,8 +78,7 @@ $("#butt1").on("click", function (event) {
   });
   function getText11am() {
     let storedText = localStorage.getItem('todo3');
-    document.getElementById('11am').value = (storedText);
-    //    $("#11am").val() = (storedText);
+       $("#11am").val(storedText);
   }
  
    //12pm code 
@@ -92,8 +88,7 @@ $("#butt1").on("click", function (event) {
   });
   function getText12pm() {
     let storedText = localStorage.getItem('todo4');
-    document.getElementById('12pm').value = (storedText);
-    //    $("#12pm").val() = (storedText);
+       $("#12pm").val(storedText);
   }
 
     //1pm code 
@@ -103,8 +98,7 @@ $("#butt1").on("click", function (event) {
       });
       function getText1pm() {
         let storedText = localStorage.getItem('todo5');
-        document.getElementById('1pm').value = (storedText);
-        //    $("#1pm").val() = (storedText);
+           $("#1pm").val(storedText);
       }
 
        //2pm code 
@@ -114,8 +108,7 @@ $("#butt1").on("click", function (event) {
       });
       function getText2pm() {
         let storedText = localStorage.getItem('todo6');
-        document.getElementById('2pm').value = (storedText);
-        //    $("#2pm").val() = (storedText);
+           $("#2pm").val(storedText);
       }
   
          //3pm code 
@@ -125,8 +118,7 @@ $("#butt1").on("click", function (event) {
       });
       function getText3pm() {
         let storedText = localStorage.getItem('todo7');
-        document.getElementById('3pm').value = (storedText);
-        //    $("#3pm").val() = (storedText);
+           $("#3pm").val(storedText);
       }
            //4pm code 
     $("#butt8").on("click", function (event) {
@@ -135,8 +127,7 @@ $("#butt1").on("click", function (event) {
       });
       function getText4pm() {
         let storedText = localStorage.getItem('todo8');
-        document.getElementById('4pm').value = (storedText);
-        //    $("#4pm").val() = (storedText);
+           $("#4pm").val(storedText);
       }
 
       //5pm code 
@@ -146,8 +137,7 @@ $("#butt1").on("click", function (event) {
       });
       function getText5pm() {
         let storedText = localStorage.getItem('todo9');
-        document.getElementById('5pm').value = (storedText);
-        //    $("#5pm").val() = (storedText);
+           $("#5pm").val(storedText);
       }
   
   
