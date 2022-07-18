@@ -17,7 +17,7 @@ See below:
 <img src="./images/screenshot.png" alt ="scheduler">
 </p>
 
-The save button shown to the right of each line (🔒) allows the sheduler to save that individual line entry for later use. The saved entries will be repopulated whenever the page loads.  
+The save button shown to the right of each line (🔒) allows the scheduler to save that individual line entry for later use. The saved entries will be repopulated when the page loads.  
 
 
 ## Technologies
