@@ -1,15 +1,11 @@
 //display current date on top of the page
 let timeEl = $("#currentDay");
-let date = moment().format("dddd MMMM Do YYYY");
+let date = moment().format("dddd, MMMM Do YYYY");
 timeEl.append(date);
 
 //display timeblocks for working hours of the day
 
 let timeBlock = $(".timeBlock");
-let text1 = $('#8am');
-
-
-
 let t = 1;
 let times = [
   "8am",
@@ -28,14 +24,14 @@ for (let i = 0; i < times.length; i++) {
   let blocks = $(`#${times[i]}`);
   blocks.attr("class", "time-block");
 
-  //gets  current time in correct syntax from moment
+  //gets current time in correct syntax from moment
   let current = moment().format("ha");
 
   //color code time blocks for past present and future
   if (current == times[i]) {
-    blocks.attr("class", "green");
+    blocks.attr("class", "red");
   } else if (current == times[i - t]) {
-    blocks.attr("class", "yellow");
+    blocks.attr("class", "green");
     t++;
   }
 }
@@ -62,7 +58,6 @@ $("#butt1").on("click", function (event) {
  
   //10am code 
   $("#butt2").on("click", function (event) {
-  
     let dataInput = $('input[name="text2"]').val();
     localStorage.setItem('todo2', dataInput);
   });
@@ -139,8 +134,6 @@ $("#butt1").on("click", function (event) {
         let storedText = localStorage.getItem('todo9');
            $("#5pm").val(storedText);
       }
-  
-  
   
   getText8am();
   getText9am();
