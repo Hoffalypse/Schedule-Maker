@@ -5,9 +5,9 @@ timeEl.append(date);
 
 //display timeblocks for working hours of the day
 
-let timeBlock = $("#timeBlock");
+let timeBlock = $(".timeBlock");
 let text1 = $('#text1');
-text1.text('sup bitches');
+
 
 
 let t = 1;
@@ -50,15 +50,19 @@ $("#butt").on("click", function (event) {
 function getText() {
   let storedText = localStorage.getItem('todo');
 
-  console.log(storedText);
 
-//   if (storedText !== null) {
-    text1.text(storedText);
-    text1.append(storedText);
-    // storedText.value = localStorage.getItem('todo');
-    // textcontent(localStorage);
-    console.log(window.localStorage.getItem("todo"));
-    console.log(storedText);
+
+  //   console.log(storedText);
+//   text1.setAttribute('type', 'text');
+// text1.attr('value','hello');
+
+
+  // //   if (storedText !== null) {
+    // timeBlock.text(storedText);
+    // timeBlock.append(storedText);
+//     // storedText.value = localStorage.getItem('todo');
+//     // textcontent(localStorage);
+
 //   }
 }
 getText();
