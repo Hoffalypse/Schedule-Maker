@@ -14,7 +14,7 @@ Upon opening the screen the user is shown the current date and time. Below they 
 See below: 
 
 <p align ="center">
-<img src="./images/screenshot" alt ="scheduler">
+<img src="./images/screenshot.PNG" alt ="scheduler">
 </p>
 
 The save button shown to the right of each line (🔒) allows the sheduler to save that individual line entry for later use. The saved entries will be repopulated whenever the page loads.  
